@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --body--back:rgb(255, 8, 0);
+    --main-back:rgb(234, 232, 232);
+}
+
+
+body{
+    background: var(--body--back);
+}
+.btn{
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px 16px;
+}
+
+.main{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-back);
+    display: grid;
+    grid-template-columns: 220px auto ;
+}
+
+.main .sidebar{
+    background: rgb(217, 216, 216);
+    
+}
+
+.main .sidebar .logo{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.main .sidebar .menuItems{
+    margin: 20px auto;
+    width: 75%;
+}
+
+.main .sidebar .logo img{
+    width: 150px;
+}
+
+.main .sidebar .menuItems a{
+    color: black;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.main .sidebar .menuItems a:hover{
+    color: rgb(255, 8, 0);
+}
+
+.main .sidebar .menuItems a h4{
+    font-weight: 400;
+    margin-left: 17px;
+}
+
+.main .sidebar .txt{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background: rgb(244, 225, 225);
+    font-size: 13px;
+}
+.main .sidebar .txt p{
+    text-align: center;
+}
+
+.main .sidebar .txt .topic{
+    margin-bottom: 8px;
+}
+
+.main .sidebar .txt .pbody{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.main .sidebar button:hover{
+    background: rgb(255, 8, 0);
+}
+
+.main .sidebar .foot{
+    position: relative;
+    top: 220px;
+    left: 30px;
+}
+.main .sidebar .foot .book{
+    border: 1px solid black;
+    padding: 10px;
+    background: white;
+    font-weight: 700;
+}
+
+.main .sidebar .foot button span{
+    padding-right:8px;
+    font-size: 14px;
+}
+
+.main .sidebar .foot p{
+    font-size: 10px;
+    position: relative;
+    top: 8px;
+    left: 35px;
+    color: gray;
+}
+
+.main .sidebar .foot p span{
+    font-size: 8px;
+    background: rgb(22, 115, 34);
+    padding: 2px 4px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+/*-------------Contents-------------*/
+
+.contents .meetings .navbar .items{
+    float: right;
+    display: flex;
+    margin: 10px;
+}
+
+.contents .meetings .navbar .items .createFeed{
+    background: rgb(9, 193, 255);
+    
+    padding: 6px 8px;
+    color: white;
+}
+
+.contents .meetings  .createMeeting{
+    background: var(--body--back);
+    margin: 0 10px;
+    padding: 6px 8px;
+    color: white;
+}
+
+.contents .meetings .navbar .items .profDetails{
+    background: rgb(241, 210, 119);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    color: brown;
+
+}
+
+.contents .meetings .meetingBody{
+    clear: right;
+    margin: 80px;
+    padding-top: 20px;
+}
+
+.contents .meetings .meetingBody .back{
+    border: 1px solid black;
+    padding: 6px;
+    background: var(--main-back);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 30px 0 20px 0;
+}
+
+.contents .meetings .meetingBody .back span{
+    font-size: 20px;
+}
+
+.contents .meetings .meetingBody .title{
+    color: rgb(193, 190, 190);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contents .meetings .meetingBody h2{
+    margin-bottom: 10px;
+}
+
+.contents .meetings .meetingBody .by{
+    color: gray;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contents .meetings .meetingBody .name{
+    color: rgb(0, 170, 255);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contents .meetings .meetingBody .day{
+    font-size: 12px;
+    text-transform: none;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.contents .meetings .meetingBody .menu{
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+}
+.contents .meetings .meetingBody .menu .general, .contents .meetings .meetingBody .menu .quiz {
+    margin: 10px 8px;
+}
+.contents .meetings .meetingBody .menu span{
+    margin: 10px 0;
+    color: rgb(219, 217, 217);
+}
+.contents .meetings .meetingBody .menu .general::after{
+    content: '';
+    display: block;
+    height: 4px;
+    position: relative;
+    top: 6px;
+    background: rgb(255, 72, 0);
+}
+
+.contents .meetings .meetingBody .meetingDetails .genBody, .contents .meetings .meetingBody .meetingDetails .participants{
+    background: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+
+.contents .meetings .meetingBody .meetingDetails .genBody .general, .contents .meetings .meetingBody .genBody label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contents .meetings .meetingBody .meetingDetails .genBody .general, .contents .meetings .meetingBody .meetingDetails .participants .participant{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contents .meetings .meetingBody .meetingDetails .genBody label{
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px;
+    background: var(--main-back);
+    font-size: 10px;
+    
+}
+
+.contents .meetings .meetingBody .meetingDetails{
+    display: flex;
+    gap: 20px;
+}
+
+
+.contents .meetings .meetingBody .meetingDetails .genBody .day{
+    height: 50px;
+}
+
+.contents .meetings .meetingBody .meetingDetails .save{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.contents .meetings .meetingBody .meetingDetails .profile{
+    background: rgb(241, 210, 119);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    color: brown;
+    margin-right: 5px;
+}
+
+.details{
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.iPart{
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.contents .meetings .meetingBody .meetingDetails .participants{
+    width: 30%;
+    height: 100%;
+}
+.remove{
+    float: right;
+}
